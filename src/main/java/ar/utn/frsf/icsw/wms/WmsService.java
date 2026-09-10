@@ -16,6 +16,9 @@ public class WmsService {
 
     /** 1. Recepción del producto por parte del proveedor. */
     public void recibir(String sku, int cantidad) {
+        if (sku == null || sku.isBlank()) {
+            throw new IllegalArgumentException("El SKU no puede ser nulo ni vacío");
+        }
         if (cantidad <= 0) {
             throw new IllegalArgumentException("La cantidad debe ser mayor a 0");
         }

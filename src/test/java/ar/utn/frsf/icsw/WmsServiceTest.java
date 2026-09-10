@@ -23,6 +23,12 @@ class WmsServiceTest {
     }
 
     @Test
+    void recepcionConSkuVacioLanzaError() {
+        WmsService wms = new WmsService();
+        assertThrows(IllegalArgumentException.class, () -> wms.recibir("  ", 10));
+    }
+
+    @Test
     void pickingSinStockLanzaError() {
         WmsService wms = new WmsService();
         wms.recibir("B200-LIBRO", 1);
