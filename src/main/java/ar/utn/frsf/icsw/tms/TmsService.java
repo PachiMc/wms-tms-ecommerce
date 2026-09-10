@@ -61,6 +61,6 @@ public class TmsService {
             throw new IllegalArgumentException("El total de entregas debe ser mayor a 0");
         }
         double pct = 100.0 * entregasATiempo / totalEntregas;
-        return "SLA: " + String.format(Locale.ROOT, "%.1f", pct) + "% a tiempo (" + entregasATiempo + "/" + totalEntregas + ")";
+        return "NIVEL DE SERVICIO: " + String.format(Locale.ROOT, "%.1f", pct) + "% a tiempo (" + entregasATiempo + "/" + totalEntregas + ")";
     }
 }
