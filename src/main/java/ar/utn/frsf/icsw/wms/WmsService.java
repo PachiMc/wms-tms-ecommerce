@@ -58,6 +58,6 @@ public class WmsService {
 
     /** 5. Packing: deja el paquete listo para despacho (TMS). */
     public String empacar(String pedidoId, List<String> itemsRecolectados) {
-        return "Paquete " + pedidoId + " listo para despacho con " + itemsRecolectados.size() + " líneas.";
+        return "Paquete " + pedidoId + " listo para despacho";
     }
 }
