@@ -33,7 +33,7 @@ public class WmsService {
     }
 
     public String ubicacionDe(String sku) {
-        return ubicaciones.getOrDefault(sku, "SIN UBICACIÓN");
+        return ubicaciones.getOrDefault(sku, "NO UBICACIÓN");
     }
 
     public int stockDe(String sku) {
