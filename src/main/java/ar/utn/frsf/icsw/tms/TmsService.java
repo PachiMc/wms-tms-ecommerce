@@ -3,6 +3,7 @@ package ar.utn.frsf.icsw.tms;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * TMS: consolidación, asignación de transporte, ruta y costo.
@@ -52,5 +53,14 @@ public class TmsService {
     /** 5. Tracking: estado del envío (en tránsito, entregado, reprogramado). */
     public String tracking(String paqueteId, String estado) {
         return "Paquete " + paqueteId + ": " + estado;
+    }
+
+    /** 6. Reporte de SLA: porcentaje de entregas a tiempo. */
+    public String reporteSla(int entregasATiempo, int totalEntregas) {
+        if (totalEntregas <= 0) {
+            throw new IllegalArgumentException("El total de entregas debe ser mayor a 0");
+        }
+        double pct = 100.0 * entregasATiempo / totalEntregas;
+        return "SLA: " + String.format(Locale.ROOT, "%.1f", pct) + "% a tiempo (" + entregasATiempo + "/" + totalEntregas + ")";
     }
 }

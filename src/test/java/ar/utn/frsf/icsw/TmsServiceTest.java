@@ -25,6 +25,12 @@ class TmsServiceTest {
     }
 
     @Test
+    void reporteSlaCalculaPorcentaje() {
+        TmsService tms = new TmsService();
+        assertEquals("SLA: 90.0% a tiempo (9/10)", tms.reporteSla(9, 10));
+    }
+
+    @Test
     void rutaOrdenada() {
         TmsService tms = new TmsService();
         List<String> ruta = tms.optimizarRuta(List.of(new Envio("Rosario", 8), new Envio("Santa Fe", 12)));
