@@ -6,7 +6,7 @@
 
   <groupId>ar.utn.frsf</groupId>
   <artifactId>wms-tms-ecommerce</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <packaging>jar</packaging>
 
   <name>WMS y TMS para e-Commerce (UTN FRSF - ICSW)</name>
