@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * TMS mínimo: consolidación, asignación de transporte, ruta y costo.
+ * TMS: consolidación, asignación de transporte, ruta y costo.
  * Caso de estudio: optimiza el movimiento DESDE el depósito AL cliente.
  */
 public class TmsService {
@@ -23,7 +23,7 @@ public class TmsService {
             throw new IllegalArgumentException("El peso total debe ser mayor a 0");
         }
         if (pesoTotalKg <= 30) {
-            return "MOTO / FURGÓN LIVIANO";
+            return "MOTO";
         }
         if (pesoTotalKg <= 500) {
             return "CAMIÓN LIVIANO";

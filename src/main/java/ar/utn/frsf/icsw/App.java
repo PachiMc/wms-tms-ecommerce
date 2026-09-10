@@ -10,6 +10,7 @@ import java.util.Map;
 /** Demo: WMS deja paquetes listos, TMS los consolida y despacha. */
 public class App {
     public static void main(String[] args) {
+        System.out.println("== WMS/TMS e-Commerce v1.0.0 ==");
         WmsService wms = new WmsService();
         wms.recibir("A100-TV", 500);
         wms.recibir("B200-LIBRO", 100);

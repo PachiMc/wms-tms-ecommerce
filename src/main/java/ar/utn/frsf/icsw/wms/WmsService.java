@@ -33,7 +33,7 @@ public class WmsService {
     }
 
     public String ubicacionDe(String sku) {
-        return ubicaciones.getOrDefault(sku, "SIN UBICACIÓN");
+        return ubicaciones.getOrDefault(sku, "NO UBICACIÓN");
     }
 
     public int stockDe(String sku) {
@@ -58,6 +58,6 @@ public class WmsService {
 
     /** 5. Packing: deja el paquete listo para despacho (TMS). */
     public String empacar(String pedidoId, List<String> itemsRecolectados) {
-        return "Paquete " + pedidoId + " listo para despacho con " + itemsRecolectados.size() + " líneas.";
+        return "Paquete " + pedidoId + " listo para despacho";
     }
 }
