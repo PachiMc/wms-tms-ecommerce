@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * TMS mínimo: consolidación, asignación de transporte, ruta y costo.
+ * TMS: consolidación, asignación de transporte, ruta y costo.
  * Caso de estudio: optimiza el movimiento DESDE el depósito AL cliente.
  */
 public class TmsService {
