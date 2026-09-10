@@ -52,6 +52,9 @@ public class TmsService {
 
     /** 5. Tracking: estado del envío (en tránsito, entregado, reprogramado). */
     public String tracking(String paqueteId, String estado) {
+        if (paqueteId == null || paqueteId.isBlank() || estado == null || estado.isBlank()) {
+            throw new IllegalArgumentException("Paquete y estado no pueden ser nulos ni vacíos");
+        }
         return "Paquete " + paqueteId + ": " + estado;
     }
 

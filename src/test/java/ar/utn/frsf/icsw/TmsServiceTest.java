@@ -31,6 +31,12 @@ class TmsServiceTest {
     }
 
     @Test
+    void trackingRechazaDatosVacios() {
+        TmsService tms = new TmsService();
+        assertThrows(IllegalArgumentException.class, () -> tms.tracking(" ", "en tránsito"));
+    }
+
+    @Test
     void rutaOrdenada() {
         TmsService tms = new TmsService();
         List<String> ruta = tms.optimizarRuta(List.of(new Envio("Rosario", 8), new Envio("Santa Fe", 12)));
