@@ -13,7 +13,7 @@ class TmsServiceTest {
     @Test
     void asignaTransporteSegunPeso() {
         TmsService tms = new TmsService();
-        assertEquals("MOTO / FURGÓN LIVIANO", tms.asignarTransporte(10));
+        assertEquals("MOTO", tms.asignarTransporte(10));
         assertEquals("CAMIÓN LIVIANO", tms.asignarTransporte(100));
         assertEquals("CAMIÓN PESADO", tms.asignarTransporte(800));
     }

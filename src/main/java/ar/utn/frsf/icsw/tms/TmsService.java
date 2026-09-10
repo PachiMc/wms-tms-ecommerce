@@ -23,7 +23,7 @@ public class TmsService {
             throw new IllegalArgumentException("El peso total debe ser mayor a 0");
         }
         if (pesoTotalKg <= 30) {
-            return "MOTO / FURGÓN LIVIANO";
+            return "MOTO";
         }
         if (pesoTotalKg <= 500) {
             return "CAMIÓN LIVIANO";
