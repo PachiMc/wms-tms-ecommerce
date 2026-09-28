@@ -42,12 +42,7 @@ public class WmsService {
     public int stockDe(String sku) {
         return stock.getOrDefault(sku, 0);
     }
-    public boolean tieneStock(String sku, int cantidadDeseada) { 
-        if (cantidadDeseada <= 0) { 
-            return false; 
-            } 
-            return stockDe(sku) >= cantidadDeseada; 
-    }
+
     /** 3-4. Picking: secuencia de recolección para una orden. */
     public List<String> prepararPicking(Map<String, Integer> orden) {
         List<String> secuencia = new ArrayList<>();
