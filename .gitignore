@@ -1,0 +1,66 @@
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# 7b) Configuraciones locales que NO se deben subir:
+# Variables de entorno y secretos
+.env
+.env.local
+*.env
+# Configuración local de la app (ej: puertos, credenciales, paths locales)
+src/main/resources/application-local.properties
+src/main/resources/application-local.yml
+config/local.*
+*.local.properties
+# Credenciales / keystores
+*.jks
+*.p12
+*.pem
+*.key
+secrets/
+# Datos de prueba locales / dumps
+data/
+*.db
+*.sqlite
