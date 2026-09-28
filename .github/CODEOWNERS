@@ -1,18 +1,16 @@
-# CODEOWNERS — Punto 2 del TP
 # Sintaxis: <patrón> <propietarios>
-# Los propietarios son usuarios de GitHub (@usuario).
-# GitHub solicita revisión automáticamente a estas personas en cada PR
-# que toque esos archivos.
 
-# Por defecto, todo el repo lo revisa Patricio Martin
+# Todo el repo
 * @PachiMc
 
 # Código Java
 *.java @PachiMc
-pom.xml @PachiMc
+*.java @gbelletti
+pom.xml @martinbuxman
 
 # CI y configuración de GitHub
-.github/ @PachiMc
+.github/ @joaclausen
+.github/ @martinbuxman
 
 # Documentación
-*.md @PachiMc
+*.md @gbelletti
