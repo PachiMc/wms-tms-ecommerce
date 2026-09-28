@@ -1,17 +1,22 @@
 # WMS y TMS para e-Commerce — ICSW (UTN FRSF)
  [Google Docs — Documento](https://docs.google.com/document/d/1w_NiZrZ0V4iwkcIPla__JWecCU7nSJli8-b9NExVvdE/)
+
 Software de ejemplo para el caso de estudio de la materia: implementación de un WMS y un TMS en una empresa de e-Commerce.
 El WMS administra lo que pasa dentro del depósito (recepción, ubicación con slotting, control de inventario, picking, packing y despacho).
 El TMS optimiza el movimiento desde el depósito hasta el cliente (consolidación de envíos, asignación del transporte, planificación de carga, rutas, tracking, costos y SLA).
 
-Alumno: Patricio Martin — [@PachiMc](https://github.com/PachiMc) — pachimc@outlook.com.ar
+Alumnos: 
+1. Buxman Martin - [@martinbuxman](https://github.com/martinbuxman) - `cesarmartinbuxmancramaro@gmail.com`
+2. Clausen Joaquín - [@joaclausen](https://github.com/joaclausen) - `jlclausen99@gmail.com`
+3. Patricio Martin - [@PachiMc](https://github.com/PachiMc) - `pachimc@outlook.com.ar`
+4. Suárez Gael - [@gbelletti](https://github.com/gbelletti) - `gaelbelletti@gmail.com`
+
 Docentes con permiso de lectura: `ocmartinez@gmail.com`, `rodrigobravo@gmail.com`
-Entrega: 29/09/2026.
+Entrega: 29/09/2026
 
 ## Estructura
-
 ```text
-.github/CODEOWNERS                  # Responsables de revisión (punto 2)
+.github/CODEOWNERS                  # Responsables de revisión
 .github/workflows/ci.yml            # CI en cada PR y en cada push a main/develop (punto 3)
 .github/pull_request_template.md    # Datos que se piden en cada PR (punto 8b)
 src/main/java/ar/utn/frsf/icsw/
