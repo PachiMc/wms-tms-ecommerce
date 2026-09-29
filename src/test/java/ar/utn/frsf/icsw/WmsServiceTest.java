@@ -34,4 +34,10 @@ class WmsServiceTest {
         wms.recibir("B200-LIBRO", 1);
         assertThrows(IllegalStateException.class, () -> wms.prepararPicking(Map.of("B200-LIBRO", 5)));
     }
+
+    @Test
+    void etiquetarFragilMarcaPaquete() {
+        WmsService wms = new WmsService();
+        assertEquals("Paquete PED-001 - FRAGIL: manipulacion especial", wms.etiquetarFragil("PED-001"));
+    }
 }
