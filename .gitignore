@@ -19,12 +19,6 @@ mvnw.cmd
 *.ipr
 out/
 
-# Eclipse
-.classpath
-.project
-.settings/
-bin/
-
 # VS Code
 .vscode/
 *.code-workspace
@@ -44,23 +38,27 @@ desktop.ini
 *.log
 logs/
 
-# 7b) Configuraciones locales que NO se deben subir:
+# 7b) Configuraciones locales:
 # Variables de entorno y secretos
 .env
 .env.local
 *.env
-# Configuración local de la app (ej: puertos, credenciales, paths locales)
+
+# Configuración local de la app
 src/main/resources/application-local.properties
 src/main/resources/application-local.yml
 config/local.*
 *.local.properties
+
 # Credenciales / keystores
 *.jks
 *.p12
 *.pem
 *.key
 secrets/
+
 # Datos de prueba locales / dumps
 data/
 *.db
 *.sqlite
+
