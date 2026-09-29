@@ -68,4 +68,12 @@ public class WmsService {
     public String empacar(String pedidoId, List<String> itemsRecolectados) {
         return "Paquete " + pedidoId + " listo para despacho";
     }
+
+    /** 6. Etiquetado: marca un paquete como fragil para manipulacion especial. */
+    public String etiquetarFragil(String pedidoId) {
+        if (pedidoId == null || pedidoId.isBlank()) {
+            throw new IllegalArgumentException("El pedido no puede ser nulo ni vacio");
+        }
+        return "Paquete " + pedidoId + " - FRAGIL: manipulacion especial";
+    }
 }
