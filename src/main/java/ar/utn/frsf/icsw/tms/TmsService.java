@@ -44,7 +44,7 @@ public class TmsService {
 
     /** 4. Cálculo de costos logísticos. */
     public double calcularCosto(double pesoTotalKg, int cantidadDestinos, double costoPorKm, double kmEstimados) {
-        if (pesoTotalKg <= 0 || cantidadDestinos <= 0) {
+        if (pesoTotalKg <= 1 || cantidadDestinos <= 3) {
             throw new IllegalArgumentException("Peso y destinos deben ser mayores a 0");
         }
         return costoPorKm * kmEstimados + pesoTotalKg * 50 + cantidadDestinos * 500;
